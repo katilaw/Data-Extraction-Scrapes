@@ -1,0 +1,816 @@
+#(Element:0x3fd54dc1b9e0 {
+  name = "table",
+  attributes = [
+    #(Attr:0x3fd54dc3708c { name = "border", value = "0" }),
+    #(Attr:0x3fd54dc37078 { name = "class", value = "info-table" }),
+    #(Attr:0x3fd54dc3703c { name = "cellspacing", value = "0" }),
+    #(Attr:0x3fd54dc37014 { name = "cellpadding", value = "0" })],
+  children = [
+    #(Element:0x3fd54d9bc078 {
+      name = "tr",
+      children = [
+        #(Element:0x3fd54e0fe46c {
+          name = "th",
+          attributes = [ #(Attr:0x3fd54e10e074 { name = "class", value = "first" }), #(Attr:0x3fd54e113c04 { name = "id", value = "jobth1" })],
+          children = [ #(Text "Job Title")]
+          }),
+        #(Element:0x3fd54e0bfbb8 {
+          name = "th",
+          attributes = [ #(Attr:0x3fd54e0c3eac { name = "id", value = "jobth2" })],
+          children = [ #(Text "Location")]
+          }),
+        #(Element:0x3fd54e0e05ac {
+          name = "th",
+          attributes = [ #(Attr:0x3fd54d8970e4 { name = "id", value = "jobth3" })],
+          children = [ #(Text "Division")]
+          }),
+        #(Element:0x3fd54d8b731c { name = "th", attributes = [ #(Attr:0x3fd54d8b6278 { name = "class", value = "last" })] })]
+      }),
+    #(Element:0x3fd54d8d9f34 {
+      name = "tr",
+      children = [
+        #(Element:0x3fd54d8e4d30 {
+          name = "input",
+          attributes = [
+            #(Attr:0x3fd54d8e9c18 { name = "name", value = "hdnFilterTitle" }),
+            #(Attr:0x3fd54d8e9b3c { name = "type", value = "hidden" }),
+            #(Attr:0x3fd54d8e9b28 { name = "id", value = "hdnFilterTitle" }),
+            #(Attr:0x3fd54d8e9b14 { name = "value", value = "filter by job title" })]
+          }),
+        #(Element:0x3fd54da18990 {
+          name = "input",
+          attributes = [
+            #(Attr:0x3fd54d95b19c { name = "name", value = "hdnFilterLocation" }),
+            #(Attr:0x3fd54d95b188 { name = "type", value = "hidden" }),
+            #(Attr:0x3fd54d95b174 { name = "id", value = "hdnFilterLocation" }),
+            #(Attr:0x3fd54d95b14c { name = "value", value = "filter by job location" })]
+          }),
+        #(Element:0x3fd54da700c8 {
+          name = "input",
+          attributes = [
+            #(Attr:0x3fd54da742f4 { name = "id", value = "hdnSearchResultCount" }),
+            #(Attr:0x3fd54da742e0 { name = "value", value = "0" }),
+            #(Attr:0x3fd54da742a4 { name = "type", value = "hidden" })]
+          })]
+      }),
+    #(Element:0x3fd54daa8dec {
+      name = "tr",
+      attributes = [ #(Attr:0x3fd54e0e3d10 { name = "class", value = "trFilterResults" })],
+      children = [
+        #(Element:0x3fd54daab218 {
+          name = "td",
+          attributes = [ #(Attr:0x3fd54daad07c { name = "class", value = "td1" })],
+          children = [
+            #(Element:0x3fd54e158700 {
+              name = "label",
+              attributes = [
+                #(Attr:0x3fd54dc79b1c { name = "for", value = "jobTitleKeyword" }),
+                #(Attr:0x3fd54dc79a90 { name = "class", value = "wai-aria" })],
+              children = [ #(Text "Job Title")]
+              }),
+            #(Element:0x3fd54dac1be4 {
+              name = "input",
+              attributes = [
+                #(Attr:0x3fd54dac0a50 { name = "id", value = "jobTitleKeyword" }),
+                #(Attr:0x3fd54dac0a3c { name = "value", value = "filter by job title" }),
+                #(Attr:0x3fd54dac0a28 { name = "type", value = "text" }),
+                #(Attr:0x3fd54dac0a14 { name = "maxlength", value = "200" }),
+                #(Attr:0x3fd54dac0a00 { name = "onfocus", value = "if(this.value == 'filter by job title'){this.value = '';}" }),
+                #(Attr:0x3fd54dac09ec { name = "onblur", value = "if(this.value == ''){this.value = 'filter by job title';}" }),
+                #(Attr:0x3fd54dac09d8 {
+                  name = "onkeydown",
+                  value = "if(event.which || event.keyCode){if ((event.which == 13) || (event.keyCode == 13)) {filterResultsEvent=true;OnGoFilter('http://jobsatturner.com/list.aspx?keyword=Enter-Search-Terms&state=careers&category=news','True','True');return false;}}"
+                  })]
+              })]
+          }),
+        #(Element:0x3fd54e16aacc {
+          name = "td",
+          attributes = [ #(Attr:0x3fd54e16dce0 { name = "class", value = "td2" })],
+          children = [
+            #(Element:0x3fd54dadf6a8 {
+              name = "label",
+              attributes = [
+                #(Attr:0x3fd54dae95f4 { name = "for", value = "locationsKeyword" }),
+                #(Attr:0x3fd54dae95e0 { name = "class", value = "wai-aria" })],
+              children = [ #(Text "Location")]
+              }),
+            #(Element:0x3fd54daf163c {
+              name = "input",
+              attributes = [
+                #(Attr:0x3fd54daf0494 { name = "id", value = "locationsKeyword" }),
+                #(Attr:0x3fd54daf0480 { name = "value", value = "filter by job location" }),
+                #(Attr:0x3fd54daf0458 { name = "type", value = "text" }),
+                #(Attr:0x3fd54daf0444 { name = "maxlength", value = "200" }),
+                #(Attr:0x3fd54daf0430 { name = "onfocus", value = "if(this.value == 'filter by job location'){this.value = '';}" }),
+                #(Attr:0x3fd54daf0408 { name = "onblur", value = "if(this.value == ''){this.value = 'filter by job location';}" }),
+                #(Attr:0x3fd54daf03f4 {
+                  name = "onkeydown",
+                  value = "if(event.which || event.keyCode){if ((event.which == 13) || (event.keyCode == 13)) {filterResultsEvent=true;OnGoFilter('http://jobsatturner.com/list.aspx?keyword=Enter-Search-Terms&state=careers&category=news','True','True');return false;}}"
+                  })]
+              })]
+          }),
+        #(Element:0x3fd54dcc7bc8 { name = "td", attributes = [ #(Attr:0x3fd54dcc6a0c { name = "class", value = "td3" })] }),
+        #(Element:0x3fd54e40d2fc {
+          name = "td",
+          attributes = [ #(Attr:0x3fd54e408450 { name = "class", value = "td4" })],
+          children = [
+            #(Element:0x3fd54db0897c {
+              name = "a",
+              attributes = [
+                #(Attr:0x3fd54db0feac { name = "id", value = "btGo" }),
+                #(Attr:0x3fd54db0fe98 { name = "onclick", value = "filterResultsEvent=true;" }),
+                #(Attr:0x3fd54db0fe70 {
+                  name = "href",
+                  value = "javascript:OnGoFilter('http://jobsatturner.com/list.aspx?keyword=Enter-Search-Terms&state=careers&category=news', 'True', 'True');"
+                  })],
+              children = [ #(Text "GO")]
+              }),
+            #(Element:0x3fd54db35e7c {
+              name = "a",
+              attributes = [
+                #(Attr:0x3fd54db350f8 { name = "id", value = "btReset" }),
+                #(Attr:0x3fd54db350e4 {
+                  name = "href",
+                  value = "javascript:Reset('http://jobsatturner.com/list.aspx?keyword=Enter-Search-Terms&state=careers&category=news', 'True', 'True');"
+                  })],
+              children = [ #(Text "Reset")]
+              })]
+          })]
+      }),
+    #(Element:0x3fd54db549d0 {
+      name = "tr",
+      children = [
+        #(Element:0x3fd54e17c4ac {
+          name = "td",
+          attributes = [
+            #(Attr:0x3fd54e187cbc { name = "class", value = "jobTitle" }),
+            #(Attr:0x3fd54e187ca8 { name = "headers", value = "jobth1" })],
+          children = [
+            #(Element:0x3fd54e18ea94 {
+              name = "a",
+              attributes = [
+                #(Attr:0x3fd54e18e260 { name = "id", value = "jobs_list_link_1" }),
+                #(Attr:0x3fd54e18e24c { name = "href", value = "/united-states/news/photojournalist-jobs" })],
+              children = [ #(Text "Photojournalist")]
+              })]
+          }),
+        #(Element:0x3fd54db603ac {
+          name = "td",
+          attributes = [
+            #(Attr:0x3fd54e40f50c { name = "class", value = "location" }),
+            #(Attr:0x3fd54e40f4f8 { name = "headers", value = "jobth2" })],
+          children = [ #(Text "New York, NY")]
+          }),
+        #(Element:0x3fd54e41f7b8 {
+          name = "td",
+          attributes = [
+            #(Attr:0x3fd54e41ea34 { name = "class", value = "companyName" }),
+            #(Attr:0x3fd54e41ea20 { name = "headers", value = "jobth4" })],
+          children = [ #(Text "News")]
+          })]
+      }),
+    #(Element:0x3fd54e43a220 {
+      name = "tr",
+      attributes = [ #(Attr:0x3fd54e43f464 { name = "class", value = "alt" })],
+      children = [
+        #(Element:0x3fd54e446ee4 {
+          name = "td",
+          attributes = [
+            #(Attr:0x3fd54db62ea4 { name = "class", value = "jobTitle" }),
+            #(Attr:0x3fd54db62e90 { name = "headers", value = "jobth1" })],
+          children = [
+            #(Element:0x3fd54db872f4 {
+              name = "a",
+              attributes = [
+                #(Attr:0x3fd54db86bec { name = "id", value = "jobs_list_link_2" }),
+                #(Attr:0x3fd54db86bd8 { name = "href", value = "/atlanta/news/sr.-producer-data-news-﹠-interactives-jobs" })],
+              children = [ #(Text "Sr. Producer Data News & Interactives")]
+              })]
+          }),
+        #(Element:0x3fd54db9e080 {
+          name = "td",
+          attributes = [
+            #(Attr:0x3fd54dba32c4 { name = "class", value = "location" }),
+            #(Attr:0x3fd54dba32b0 { name = "headers", value = "jobth2" })],
+          children = [ #(Text "Atlanta, GA")]
+          }),
+        #(Element:0x3fd54dbbb5e0 {
+          name = "td",
+          attributes = [
+            #(Attr:0x3fd54dbba85c { name = "class", value = "companyName" }),
+            #(Attr:0x3fd54dbba848 { name = "headers", value = "jobth4" })],
+          children = [ #(Text "News")]
+          })]
+      }),
+    #(Element:0x3fd54dbd204c {
+      name = "tr",
+      children = [
+        #(Element:0x3fd54dbdbe1c {
+          name = "td",
+          attributes = [
+            #(Attr:0x3fd54dbdb714 { name = "class", value = "jobTitle" }),
+            #(Attr:0x3fd54dbdb700 { name = "headers", value = "jobth1" })],
+          children = [
+            #(Element:0x3fd54dbef340 {
+              name = "a",
+              attributes = [
+                #(Attr:0x3fd54dbeec38 { name = "id", value = "jobs_list_link_3" }),
+                #(Attr:0x3fd54dbeec24 { name = "href", value = "/atlanta/news/writer_producer-cnn-sports-jobs" })],
+              children = [ #(Text "Writer\\Producer CNN Sports")]
+              })]
+          }),
+        #(Element:0x3fd54f00de30 {
+          name = "td",
+          attributes = [
+            #(Attr:0x3fd54f00d0ac { name = "class", value = "location" }),
+            #(Attr:0x3fd54f00d098 { name = "headers", value = "jobth2" })],
+          children = [ #(Text "Atlanta, GA")]
+          }),
+        #(Element:0x3fd54f0253c8 {
+          name = "td",
+          attributes = [
+            #(Attr:0x3fd54f024644 { name = "class", value = "companyName" }),
+            #(Attr:0x3fd54f024630 { name = "headers", value = "jobth4" })],
+          children = [ #(Text "News")]
+          })]
+      }),
+    #(Element:0x3fd54f041dfc {
+      name = "tr",
+      attributes = [ #(Attr:0x3fd54f041078 { name = "class", value = "alt" })],
+      children = [
+        #(Element:0x3fd54f048af8 {
+          name = "td",
+          attributes = [
+            #(Attr:0x3fd54f04cab8 { name = "class", value = "jobTitle" }),
+            #(Attr:0x3fd54f04caa4 { name = "headers", value = "jobth1" })],
+          children = [
+            #(Element:0x3fd54f060f04 {
+              name = "a",
+              attributes = [
+                #(Attr:0x3fd54f0607fc { name = "id", value = "jobs_list_link_4" }),
+                #(Attr:0x3fd54f0607e8 { name = "href", value = "/united-states/news/jobid9379872-business-development-manager-cnn-digital-jobs" })],
+              children = [ #(Text "Business Development Manager CNN Digital")]
+              })]
+          }),
+        #(Element:0x3fd54f07dc58 {
+          name = "td",
+          attributes = [
+            #(Attr:0x3fd54f07ced4 { name = "class", value = "location" }),
+            #(Attr:0x3fd54f07cec0 { name = "headers", value = "jobth2" })],
+          children = [ #(Text "New York, NY")]
+          }),
+        #(Element:0x3fd54d87ba4c {
+          name = "td",
+          attributes = [
+            #(Attr:0x3fd54d97c860 { name = "class", value = "companyName" }),
+            #(Attr:0x3fd54d97c824 { name = "headers", value = "jobth4" })],
+          children = [ #(Text "News")]
+          })]
+      }),
+    #(Element:0x3fd54da080f4 {
+      name = "tr",
+      children = [
+        #(Element:0x3fd54e0ae6ec {
+          name = "td",
+          attributes = [
+            #(Attr:0x3fd54e0b9b28 { name = "class", value = "jobTitle" }),
+            #(Attr:0x3fd54e0b9b00 { name = "headers", value = "jobth1" })],
+          children = [
+            #(Element:0x3fd54e0e15c4 {
+              name = "a",
+              attributes = [
+                #(Attr:0x3fd54d96bce0 { name = "id", value = "jobs_list_link_5" }),
+                #(Attr:0x3fd54d96bc68 { name = "href", value = "/atlanta/news/writer-cnn-international-jobs" })],
+              children = [ #(Text "Writer CNN International")]
+              })]
+          }),
+        #(Element:0x3fd54d8cd220 {
+          name = "td",
+          attributes = [
+            #(Attr:0x3fd54d8cfb4c { name = "class", value = "location" }),
+            #(Attr:0x3fd54d8cfb38 { name = "headers", value = "jobth2" })],
+          children = [ #(Text "Atlanta, GA")]
+          }),
+        #(Element:0x3fd54d924070 {
+          name = "td",
+          attributes = [
+            #(Attr:0x3fd54d931b94 { name = "class", value = "companyName" }),
+            #(Attr:0x3fd54d931acc { name = "headers", value = "jobth4" })],
+          children = [ #(Text "News")]
+          })]
+      }),
+    #(Element:0x3fd54da351d0 {
+      name = "tr",
+      attributes = [ #(Attr:0x3fd54da3dde4 { name = "class", value = "alt" })],
+      children = [
+        #(Element:0x3fd54da54e04 {
+          name = "td",
+          attributes = [
+            #(Attr:0x3fd54da5c2a8 { name = "class", value = "jobTitle" }),
+            #(Attr:0x3fd54da5c294 { name = "headers", value = "jobth1" })],
+          children = [
+            #(Element:0x3fd54da99004 {
+              name = "a",
+              attributes = [
+                #(Attr:0x3fd54da9dd0c { name = "id", value = "jobs_list_link_6" }),
+                #(Attr:0x3fd54da9dc94 { name = "href", value = "/los-angeles/news/fall-2016-cnn-la-newsource-intern-jobs" })],
+              children = [ #(Text "Fall 2016 CNN LA Newsource Intern")]
+              })]
+          }),
+        #(Element:0x3fd54daaa73c {
+          name = "td",
+          attributes = [
+            #(Attr:0x3fd54daada04 { name = "class", value = "location" }),
+            #(Attr:0x3fd54daad9f0 { name = "headers", value = "jobth2" })],
+          children = [ #(Text "Los Angeles, CA")]
+          }),
+        #(Element:0x3fd54e15bc70 {
+          name = "td",
+          attributes = [
+            #(Attr:0x3fd54e15ad48 { name = "class", value = "companyName" }),
+            #(Attr:0x3fd54e15ad34 { name = "headers", value = "jobth4" })],
+          children = [ #(Text "News")]
+          })]
+      }),
+    #(Element:0x3fd54dac2850 {
+      name = "tr",
+      children = [
+        #(Element:0x3fd54dac9d08 {
+          name = "td",
+          attributes = [
+            #(Attr:0x3fd54dac9588 { name = "class", value = "jobTitle" }),
+            #(Attr:0x3fd54dac9574 { name = "headers", value = "jobth1" })],
+          children = [
+            #(Element:0x3fd54dad1c74 {
+              name = "a",
+              attributes = [
+                #(Attr:0x3fd54dad1080 { name = "id", value = "jobs_list_link_7" }),
+                #(Attr:0x3fd54dad106c { name = "href", value = "/united-kingdom/london/news/product-manager-cnn-style-jobs" })],
+              children = [ #(Text "Product Manager CNN Style")]
+              })]
+          }),
+        #(Element:0x3fd54e16f590 {
+          name = "td",
+          attributes = [
+            #(Attr:0x3fd54e16e76c { name = "class", value = "location" }),
+            #(Attr:0x3fd54e16e758 { name = "headers", value = "jobth2" })],
+          children = [ #(Text "London, United Kingdom")]
+          }),
+        #(Element:0x3fd54e177b50 {
+          name = "td",
+          attributes = [
+            #(Attr:0x3fd54e1768f4 { name = "class", value = "companyName" }),
+            #(Attr:0x3fd54e1768cc { name = "headers", value = "jobth4" })],
+          children = [ #(Text "1570")]
+          })]
+      }),
+    #(Element:0x3fd54daf20a0 {
+      name = "tr",
+      attributes = [ #(Attr:0x3fd54dc9af4c { name = "class", value = "alt" })],
+      children = [
+        #(Element:0x3fd54dca742c {
+          name = "td",
+          attributes = [
+            #(Attr:0x3fd54dcaead8 { name = "class", value = "jobTitle" }),
+            #(Attr:0x3fd54dcaeab0 { name = "headers", value = "jobth1" })],
+          children = [
+            #(Element:0x3fd54dcc3e9c {
+              name = "a",
+              attributes = [
+                #(Attr:0x3fd54dcc3514 { name = "id", value = "jobs_list_link_8" }),
+                #(Attr:0x3fd54dcc34ec { name = "href", value = "/united-kingdom/london/news/senior-producer-news-jobs" })],
+              children = [ #(Text "Senior Producer News")]
+              })]
+          }),
+        #(Element:0x3fd54db08b84 {
+          name = "td",
+          attributes = [
+            #(Attr:0x3fd54db0b870 { name = "class", value = "location" }),
+            #(Attr:0x3fd54db0b848 { name = "headers", value = "jobth2" })],
+          children = [ #(Text "London, United Kingdom")]
+          }),
+        #(Element:0x3fd54db2fb1c {
+          name = "td",
+          attributes = [
+            #(Attr:0x3fd54db2edac { name = "class", value = "companyName" }),
+            #(Attr:0x3fd54db2ed98 { name = "headers", value = "jobth4" })],
+          children = [ #(Text "1570")]
+          })]
+      }),
+    #(Element:0x3fd54db498c8 {
+      name = "tr",
+      children = [
+        #(Element:0x3fd54db4d608 {
+          name = "td",
+          attributes = [
+            #(Attr:0x3fd54db4ce10 { name = "class", value = "jobTitle" }),
+            #(Attr:0x3fd54db4cdfc { name = "headers", value = "jobth1" })],
+          children = [
+            #(Element:0x3fd54db5932c {
+              name = "a",
+              attributes = [
+                #(Attr:0x3fd54db58bc0 { name = "id", value = "jobs_list_link_9" }),
+                #(Attr:0x3fd54db58b84 {
+                  name = "href",
+                  value = "/atlanta/news/jobid10436251-sr-systems_software-developer-cnn-best-meta-team-jobs"
+                  })],
+              children = [ #(Text "Sr Systems\\Software Developer CNN BEST META TEAM")]
+              })]
+          }),
+        #(Element:0x3fd54e198468 {
+          name = "td",
+          attributes = [
+            #(Attr:0x3fd54e19b6f4 { name = "class", value = "location" }),
+            #(Attr:0x3fd54e19b6e0 { name = "headers", value = "jobth2" })],
+          children = [ #(Text "Atlanta, GA")]
+          }),
+        #(Element:0x3fd54e417360 {
+          name = "td",
+          attributes = [
+            #(Attr:0x3fd54e416528 { name = "class", value = "companyName" }),
+            #(Attr:0x3fd54e416514 { name = "headers", value = "jobth4" })],
+          children = [ #(Text "Corporate")]
+          })]
+      }),
+    #(Element:0x3fd54e433cf4 {
+      name = "tr",
+      attributes = [ #(Attr:0x3fd54e432f70 { name = "class", value = "alt" })],
+      children = [
+        #(Element:0x3fd54e43a9c8 {
+          name = "td",
+          attributes = [
+            #(Attr:0x3fd54e43e9c4 { name = "class", value = "jobTitle" }),
+            #(Attr:0x3fd54e43e9b0 { name = "headers", value = "jobth1" })],
+          children = [
+            #(Element:0x3fd54db7ad4c {
+              name = "a",
+              attributes = [
+                #(Attr:0x3fd54db7a630 { name = "id", value = "jobs_list_link_10" }),
+                #(Attr:0x3fd54db7a61c {
+                  name = "href",
+                  value = "/atlanta/news/jobid10436252-sr-systems_software-developer-cnn-best-meta-team-jobs"
+                  })],
+              children = [ #(Text "Sr Systems\\Software Developer CNN BEST META TEAM")]
+              })]
+          }),
+        #(Element:0x3fd54db9771c {
+          name = "td",
+          attributes = [
+            #(Attr:0x3fd54db96970 { name = "class", value = "location" }),
+            #(Attr:0x3fd54db96948 { name = "headers", value = "jobth2" })],
+          children = [ #(Text "Atlanta, GA")]
+          }),
+        #(Element:0x3fd54dbaec50 {
+          name = "td",
+          attributes = [
+            #(Attr:0x3fd54dbb3e58 { name = "class", value = "companyName" }),
+            #(Attr:0x3fd54dbb3e44 { name = "headers", value = "jobth4" })],
+          children = [ #(Text "Corporate")]
+          })]
+      }),
+    #(Element:0x3fd54dbcb634 {
+      name = "tr",
+      children = [
+        #(Element:0x3fd54dbcf52c {
+          name = "td",
+          attributes = [
+            #(Attr:0x3fd54dbced70 { name = "class", value = "jobTitle" }),
+            #(Attr:0x3fd54dbced5c { name = "headers", value = "jobth1" })],
+          children = [
+            #(Element:0x3fd54dbe28ac {
+              name = "a",
+              attributes = [
+                #(Attr:0x3fd54dbe21a4 { name = "id", value = "jobs_list_link_11" }),
+                #(Attr:0x3fd54dbe2190 { name = "href", value = "/atlanta/news/data-scientist-cnn-digital-jobs" })],
+              children = [ #(Text "Data Scientist CNN Digital")]
+              })]
+          }),
+        #(Element:0x3fd54dbf9638 {
+          name = "td",
+          attributes = [
+            #(Attr:0x3fd54dbf8878 { name = "class", value = "location" }),
+            #(Attr:0x3fd54dbf8864 { name = "headers", value = "jobth2" })],
+          children = [ #(Text "Atlanta, GA")]
+          }),
+        #(Element:0x3fd54f018aec {
+          name = "td",
+          attributes = [
+            #(Attr:0x3fd54f01dcf4 { name = "class", value = "companyName" }),
+            #(Attr:0x3fd54f01dce0 { name = "headers", value = "jobth4" })],
+          children = [ #(Text "News")]
+          })]
+      }),
+    #(Element:0x3fd54f0354d0 {
+      name = "tr",
+      attributes = [ #(Attr:0x3fd54f034738 { name = "class", value = "alt" })],
+      children = [
+        #(Element:0x3fd54f03c168 {
+          name = "td",
+          attributes = [
+            #(Attr:0x3fd54f045a4c { name = "class", value = "jobTitle" }),
+            #(Attr:0x3fd54f045bf0 { name = "headers", value = "jobth1" })],
+          children = [
+            #(Element:0x3fd54f0541b4 {
+              name = "a",
+              attributes = [
+                #(Attr:0x3fd54f059bf0 { name = "id", value = "jobs_list_link_12" }),
+                #(Attr:0x3fd54f059bdc {
+                  name = "href",
+                  value = "/united-kingdom/london/news/supervising-producer-of-production-video-development-jobs"
+                  })],
+              children = [ #(Text "Supervising Producer of Production Video Development")]
+              })]
+          }),
+        #(Element:0x3fd54f070c74 {
+          name = "td",
+          attributes = [
+            #(Attr:0x3fd54f075f6c { name = "class", value = "location" }),
+            #(Attr:0x3fd54f075f58 { name = "headers", value = "jobth2" })],
+          children = [ #(Text "London, United Kingdom")]
+          }),
+        #(Element:0x3fd54f08ddb0 {
+          name = "td",
+          attributes = [
+            #(Attr:0x3fd54f08d02c { name = "class", value = "companyName" }),
+            #(Attr:0x3fd54f08d018 { name = "headers", value = "jobth4" })],
+          children = [ #(Text "1570")]
+          })]
+      }),
+    #(Element:0x3fd54f0a481c {
+      name = "tr",
+      children = [
+        #(Element:0x3fd54f0a8624 {
+          name = "td",
+          attributes = [
+            #(Attr:0x3fd54f0a9fc4 { name = "class", value = "jobTitle" }),
+            #(Attr:0x3fd54f0a9fb0 { name = "headers", value = "jobth1" })],
+          children = [
+            #(Element:0x3fd54f095510 {
+              name = "a",
+              attributes = [
+                #(Attr:0x3fd54f094de0 { name = "id", value = "jobs_list_link_13" }),
+                #(Attr:0x3fd54f094dcc { name = "href", value = "/atlanta/news/technical-product-manager-cnn-digital-jobs" })],
+              children = [ #(Text "Technical Product Manager CNN Digital")]
+              })]
+          }),
+        #(Element:0x3fd54f07c178 {
+          name = "td",
+          attributes = [
+            #(Attr:0x3fd54f079464 { name = "class", value = "location" }),
+            #(Attr:0x3fd54f079450 { name = "headers", value = "jobth2" })],
+          children = [ #(Text "Atlanta, GA")]
+          }),
+        #(Element:0x3fd54f06174c {
+          name = "td",
+          attributes = [
+            #(Attr:0x3fd54f0609b4 { name = "class", value = "companyName" }),
+            #(Attr:0x3fd54f06093c { name = "headers", value = "jobth4" })],
+          children = [ #(Text "News")]
+          })]
+      }),
+    #(Element:0x3fd54f04801c {
+      name = "tr",
+      attributes = [ #(Attr:0x3fd54f045380 { name = "class", value = "alt" })],
+      children = [
+        #(Element:0x3fd54f03cd48 {
+          name = "td",
+          attributes = [
+            #(Attr:0x3fd54f038d38 { name = "class", value = "jobTitle" }),
+            #(Attr:0x3fd54f038d24 { name = "headers", value = "jobth1" })],
+          children = [
+            #(Element:0x3fd54f025134 {
+              name = "a",
+              attributes = [
+                #(Attr:0x3fd54f0249a0 { name = "id", value = "jobs_list_link_14" }),
+                #(Attr:0x3fd54f02498c { name = "href", value = "/atlanta/news/multi-platform-producer-cnn-health-jobs" })],
+              children = [ #(Text "Multi Platform Producer CNN Health")]
+              })]
+          }),
+        #(Element:0x3fd54f009da8 {
+          name = "td",
+          attributes = [
+            #(Attr:0x3fd54f008f84 { name = "class", value = "location" }),
+            #(Attr:0x3fd54f008f70 { name = "headers", value = "jobth2" })],
+          children = [ #(Text "Atlanta, GA")]
+          }),
+        #(Element:0x3fd54dbef264 {
+          name = "td",
+          attributes = [
+            #(Attr:0x3fd54dbee3c8 { name = "class", value = "companyName" }),
+            #(Attr:0x3fd54dbee3b4 { name = "headers", value = "jobth4" })],
+          children = [ #(Text "News")]
+          })]
+      }),
+    #(Element:0x3fd54dbd3c6c {
+      name = "tr",
+      children = [
+        #(Element:0x3fd54dbcfaa4 {
+          name = "td",
+          attributes = [
+            #(Attr:0x3fd54dbcf2e8 { name = "class", value = "jobTitle" }),
+            #(Attr:0x3fd54dbcf2d4 { name = "headers", value = "jobth1" })],
+          children = [
+            #(Element:0x3fd54dbbadfc {
+              name = "a",
+              attributes = [
+                #(Attr:0x3fd54dbba668 { name = "id", value = "jobs_list_link_15" }),
+                #(Attr:0x3fd54dbba654 { name = "href", value = "/united-kingdom/london/news/motion-graphics-designer-snapchat-jobs" })],
+              children = [ #(Text "Motion Graphics Designer Snapchat")]
+              })]
+          }),
+        #(Element:0x3fd54db9fafc {
+          name = "td",
+          attributes = [
+            #(Attr:0x3fd54db9ecd8 { name = "class", value = "location" }),
+            #(Attr:0x3fd54db9ecc4 { name = "headers", value = "jobth2" })],
+          children = [ #(Text "London, United Kingdom")]
+          }),
+        #(Element:0x3fd54db86fd4 {
+          name = "td",
+          attributes = [
+            #(Attr:0x3fd54db8619c { name = "class", value = "companyName" }),
+            #(Attr:0x3fd54db86188 { name = "headers", value = "jobth4" })],
+          children = [ #(Text "1570")]
+          })]
+      }),
+    #(Element:0x3fd54e443a64 {
+      name = "tr",
+      attributes = [ #(Attr:0x3fd54e442bdc { name = "class", value = "alt" })],
+      children = [
+        #(Element:0x3fd54e43a57c {
+          name = "td",
+          attributes = [
+            #(Attr:0x3fd54e43651c { name = "class", value = "jobTitle" }),
+            #(Attr:0x3fd54e436508 { name = "headers", value = "jobth1" })],
+          children = [
+            #(Element:0x3fd54d8459c4 {
+              name = "a",
+              attributes = [
+                #(Attr:0x3fd54d833814 { name = "id", value = "jobs_list_link_16" }),
+                #(Attr:0x3fd54d8336c0 { name = "href", value = "/united-kingdom/london/news/social-publishing-producer-snapchat-jobs" })],
+              children = [ #(Text "Social Publishing Producer Snapchat")]
+              })]
+          }),
+        #(Element:0x3fd54d9e458c {
+          name = "td",
+          attributes = [
+            #(Attr:0x3fd54d9f92c0 { name = "class", value = "location" }),
+            #(Attr:0x3fd54d9f92ac { name = "headers", value = "jobth2" })],
+          children = [ #(Text "London, United Kingdom")]
+          }),
+        #(Element:0x3fd54e0cac0c {
+          name = "td",
+          attributes = [
+            #(Attr:0x3fd54e0d088c { name = "class", value = "companyName" }),
+            #(Attr:0x3fd54e0d0864 { name = "headers", value = "jobth4" })],
+          children = [ #(Text "1570")]
+          })]
+      }),
+    #(Element:0x3fd54d8b77f4 {
+      name = "tr",
+      children = [
+        #(Element:0x3fd54d8ba38c {
+          name = "td",
+          attributes = [
+            #(Attr:0x3fd54d8bc574 { name = "class", value = "jobTitle" }),
+            #(Attr:0x3fd54d8bc560 { name = "headers", value = "jobth1" })],
+          children = [
+            #(Element:0x3fd54d904bf8 {
+              name = "a",
+              attributes = [
+                #(Attr:0x3fd54d90849c { name = "id", value = "jobs_list_link_17" }),
+                #(Attr:0x3fd54d908438 { name = "href", value = "/atlanta/news/sr-business-analyst-performance-cnn-digital-jobs" })],
+              children = [ #(Text "Sr Business Analyst Performance CNN Digital")]
+              })]
+          }),
+        #(Element:0x3fd54d95a38c {
+          name = "td",
+          attributes = [
+            #(Attr:0x3fd54da1c270 { name = "class", value = "location" }),
+            #(Attr:0x3fd54da1c16c { name = "headers", value = "jobth2" })],
+          children = [ #(Text "Atlanta, GA")]
+          }),
+        #(Element:0x3fd54da64cb4 {
+          name = "td",
+          attributes = [
+            #(Attr:0x3fd54da689f4 { name = "class", value = "companyName" }),
+            #(Attr:0x3fd54da689a4 { name = "headers", value = "jobth4" })],
+          children = [ #(Text "News")]
+          })]
+      }),
+    #(Element:0x3fd54d8884e0 {
+      name = "tr",
+      attributes = [ #(Attr:0x3fd54daa776c { name = "class", value = "alt" })],
+      children = [
+        #(Element:0x3fd54e0e23d4 {
+          name = "td",
+          attributes = [
+            #(Attr:0x3fd54e15625c { name = "class", value = "jobTitle" }),
+            #(Attr:0x3fd54e156248 { name = "headers", value = "jobth1" })],
+          children = [
+            #(Element:0x3fd54dc792d4 {
+              name = "a",
+              attributes = [
+                #(Attr:0x3fd54dc78b54 { name = "id", value = "jobs_list_link_18" }),
+                #(Attr:0x3fd54dc78b40 { name = "href", value = "/atlanta/news/project-manager-emerging-platforms-jobs" })],
+              children = [ #(Text "Project Manager Emerging Platforms")]
+              })]
+          }),
+        #(Element:0x3fd54e15c4b8 {
+          name = "td",
+          attributes = [
+            #(Attr:0x3fd54e15d1b0 { name = "class", value = "location" }),
+            #(Attr:0x3fd54e15d19c { name = "headers", value = "jobth2" })],
+          children = [ #(Text "Atlanta, GA")]
+          }),
+        #(Element:0x3fd54e1670d4 {
+          name = "td",
+          attributes = [
+            #(Attr:0x3fd54e1661c0 { name = "class", value = "companyName" }),
+            #(Attr:0x3fd54e1661ac { name = "headers", value = "jobth4" })],
+          children = [ #(Text "Corporate")]
+          })]
+      }),
+    #(Element:0x3fd54e16a018 {
+      name = "tr",
+      children = [
+        #(Element:0x3fd54e16dd44 {
+          name = "td",
+          attributes = [
+            #(Attr:0x3fd54e16d5ec { name = "class", value = "jobTitle" }),
+            #(Attr:0x3fd54e16d5d8 { name = "headers", value = "jobth1" })],
+          children = [
+            #(Element:0x3fd54daecbc8 {
+              name = "a",
+              attributes = [
+                #(Attr:0x3fd54daec4ac { name = "id", value = "jobs_list_link_19" }),
+                #(Attr:0x3fd54daec498 { name = "href", value = "/united-kingdom/london/news/supervising-producer-video-development-jobs" })],
+              children = [ #(Text "Supervising Producer Video Development")]
+              })]
+          }),
+        #(Element:0x3fd54e140128 {
+          name = "td",
+          attributes = [
+            #(Attr:0x3fd54e178f64 { name = "class", value = "location" }),
+            #(Attr:0x3fd54e178f3c { name = "headers", value = "jobth2" })],
+          children = [ #(Text "London, United Kingdom")]
+          }),
+        #(Element:0x3fd54dcb39ac {
+          name = "td",
+          attributes = [
+            #(Attr:0x3fd54dcb2728 { name = "class", value = "companyName" }),
+            #(Attr:0x3fd54dcb2714 { name = "headers", value = "jobth4" })],
+          children = [ #(Text "1570")]
+          })]
+      }),
+    #(Element:0x3fd54e180020 {
+      name = "tr",
+      attributes = [ #(Attr:0x3fd54e184f58 { name = "class", value = "alt" })],
+      children = [
+        #(Element:0x3fd54dccb408 {
+          name = "td",
+          attributes = [
+            #(Attr:0x3fd54db0491c { name = "class", value = "jobTitle" }),
+            #(Attr:0x3fd54db04908 { name = "headers", value = "jobth1" })],
+          children = [
+            #(Element:0x3fd54db23b64 {
+              name = "a",
+              attributes = [
+                #(Attr:0x3fd54db23218 { name = "id", value = "jobs_list_link_20" }),
+                #(Attr:0x3fd54db23204 { name = "href", value = "/united-states/news/strategic-partnership-development-analyst-cnn-digital-jobs" })],
+              children = [ #(Text "Strategic Partnership Development Analyst CNN Digital")]
+              })]
+          }),
+        #(Element:0x3fd54db3c2f4 {
+          name = "td",
+          attributes = [
+            #(Attr:0x3fd54db41600 { name = "class", value = "location" }),
+            #(Attr:0x3fd54db415ec { name = "headers", value = "jobth2" })],
+          children = [ #(Text "New York, NY")]
+          }),
+        #(Element:0x3fd54e17c434 {
+          name = "td",
+          attributes = [
+            #(Attr:0x3fd54e187550 { name = "class", value = "companyName" }),
+            #(Attr:0x3fd54e18753c { name = "headers", value = "jobth4" })],
+          children = [ #(Text "News")]
+          })]
+      }),
+    #(Element:0x3fd54e197bd0 {
+      name = "tr",
+      children = [
+        #(Element:0x3fd54db5ee44 {
+          name = "td",
+          attributes = [ #(Attr:0x3fd54db5e69c { name = "class", value = "pagination" }), #(Attr:0x3fd54db5e688 { name = "colspan", value = "4" })],
+          children = [
+            #(Element:0x3fd54e411d5c {
+              name = "a",
+              attributes = [
+                #(Attr:0x3fd54e411654 { name = "id", value = "jobs_next_page_link" }),
+                #(Attr:0x3fd54e411640 { name = "href", value = "/careers/news-jobs/job-list-2" }),
+                #(Attr:0x3fd54e41162c { name = "class", value = "pagination-more" })],
+              children = [ #(Text "Next page")]
+              })]
+          })]
+      })]
+  })
